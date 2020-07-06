@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webdemo/screens/Home/component/app_bar.dart';
+import 'package:webdemo/screens/Home/component/body.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -17,8 +18,14 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: Column(
-          children: [
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
             CustomAppBar(),
+            Spacer(),
+            Body(),
+            Spacer(
+              flex: 2,
+            )
           ],
         ),
       ),
